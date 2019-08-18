@@ -1,0 +1,166 @@
+* {margin: 0; padding: 0; font-family: 'Raleway', sans-serif;}
+
+/*Global*/
+.container {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	padding: 5px;
+}
+
+body {
+	background-color: #777;
+}
+
+
+h1 {
+	font-family: 'Poiret One', cursive;
+}
+
+/*Header*/
+header {
+	background-color: #333;
+	min-height: 55px;
+	width: 100%;
+	padding-top: 20px;
+	border-bottom: 5px solid #99bddf;
+	position: fixed;
+	top: 0;
+}
+
+#branding {
+	float: left;
+	color: #FFF;
+	width: 415px;
+	text-align: center;
+}
+
+nav {
+	display: block;
+	float: right;
+	margin-top: 8px;
+	width: 420px;
+}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+	font-size: 24px;
+	padding: 0 10px;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+nav a:hover {
+	color: #000000;
+	cursor: pointer;
+	background-color: #94e1c8;
+}
+
+nav .icon {
+	display: none;
+}
+
+/*Landing/Showcase*/
+.landing {
+	background-color: #4477ab;
+	text-align: center;
+	min-height: 150px;
+	padding: 70px 25px;
+	font-size: 48px;
+	max-width: 1500px;
+	margin-top: 70px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*About Me*/
+#AboutMe {
+	background-color: #94e1c8;
+	text-align: center;
+	max-width: 1500px;
+	padding: 60px 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#AboutMe h1 {
+	margin-bottom: 10px;
+}
+
+#AboutMe img {
+	/*float: left;*/
+	width: 30%;
+	display: inline-block;
+}
+
+#AboutMe div {
+	text-align: left;
+	/*float: right;*/
+	width: 68%;
+	display: inline-block;
+}
+
+/*Portfolio*/
+#Portfolio {
+	background-color: #4477ab;
+	max-width: 1500px;
+	padding: 60px 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#Portfolio h1 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#Portfolio ul {
+	list-style: none;
+}
+
+/*Contact Me*/
+#ContactMe {
+	background-color: #94e1c8;
+	max-width: 1500px;
+	padding: 60px 25px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#ContactMe h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #333;
+	text-align: center;
+	color: #FFF;
+}
+
+footer a {
+	color: #99bddf;
+}
+
+@media screen and (max-width: 935px) {
+	#branding {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	nav {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
