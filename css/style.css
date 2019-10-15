@@ -37,6 +37,9 @@ h3 {
 	.contact-info a {
 		color: white;
 	}
+.carousel-control-prev, .carousel-control-next {
+	color: black;
+}
 
 section {
 	padding: 75px 0; 
@@ -100,6 +103,7 @@ div.project-row {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 55px 0;
+
 }
 	div.project-details {
 		text-align: left;
@@ -117,6 +121,7 @@ div.project-row {
 		width: 100%;
 		max-width: 400px;
 		border: 5px solid #DDDDDD;
+		margin: 0 auto;
 	}
 .project-even-sm {
 	display: none;
@@ -252,6 +257,9 @@ footer a {
 
 
 @media screen and (max-width: 991px) {
+	div.project-row {
+		width: 450px;
+	}
 	.project-even-sm {
 		display: block;
 	}
@@ -274,4 +282,10 @@ footer a {
 
 	
 	
+}
+
+@media screen and (max-width: 450px) {
+	div.project-row {
+		width: 100%;
+	}
 }

@@ -2,7 +2,6 @@
 Add social media buttons
 Add github source links
 Add Testimonials
-Add contact information
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +41,7 @@ Add contact information
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<div class="navbar-nav ml-auto">
 						<a class="nav-item nav-link" href="#Portfolio">Portfolio</a>
-						<a class="nav-item nav-link" href="#Hire">Contact</a>
+						<a class="nav-item nav-link" href="#Hire">Hire Me</a>
 					</div>
 				</div><!-- #navbarNav -->
 
@@ -71,7 +70,7 @@ Add contact information
 
 	    </section>
 
-	    <div class="contact-info row text-center">
+	    <div class="contact-info row text-center" style="margin: 0 auto;">
 			<div class="col-md-3 contact-item"><a href="mailto:oq@proqweb.com"><i class="fas fa-envelope"></i> oq@proqweb.com</a></div>
 			<div class="col-md-3 contact-item"><a href="tel:6025524941"><i class="fas fa-phone"></i> 6025524941</a></div>
 			<div class="col-md-3 contact-item"><a href="https://www.linkedin.com/in/osei-quashie/"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
@@ -81,7 +80,7 @@ Add contact information
 	    <section class="text-center experiences">
 			<h2>My Experience</h2>
 			<br>
-			<p>I specialize in developing web applications in PHP, but have been exposed to a variety of different technologies.</p>
+			<p>I specialize in developing web applications in PHP, but have worked with a variety of different technologies.</p>
 			<br><br>
 
 	    	<div class="row container">
@@ -125,23 +124,43 @@ Add contact information
       
       <h2>Client Work</h2>
 
+      <div class="project-title container"><h3><strong>Coin and History</strong></h3></div>
 
-      <div class="row project-row container">
 
-        <div class="col-lg-4 project-img">
-          <h3><strong>Coin and History</strong></h3>
-          <img src="img/coin-history-filter.JPG">
-        </div>
-        
+      <div class="row project-row">
+
+      	<div id="coinHistoryCarousel" class="col-lg-5 carousel slide" data-ride="carousel" data-interval="false">
+		  <div class="carousel-inner">
+		    <div class="project-img carousel-item active">
+		      <img class="d-block w-100" src="img/coin-history-filter.JPG" alt="First slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/coin-history-filter.JPG" alt="Second slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/coin-history-filter.JPG" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#coinHistoryCarousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#coinHistoryCarousel" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+  
         <div class="col project-details">
           
-          <p><strong>Client Problem:</strong></p>
-          <p>Needed a way to search and filter through coins and display them depending on search criteria.</p>
-          <br>
-          <p><strong>Solution:</strong></p>
-          <p>Created a database that stores the information for each coin.</p>
-          <p>Developed a way to search and filter through coins in the database using criteria specified by the client. Only displaying the coins that match the selection of the user.</p>
-          <p>Users are now able easily find the specified coin and be taken to the page with more information.</p>
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Create MySQL database for storing each coin with it's information.</li>
+            <li>Used PHP to communicate with database.</li>
+            <li>Used AJAX to filter the coins and display the ones that match the criteria specified live.</li>
+            <li>Styled the display of the coins and their information.</li>
+          </ul>
           <p><strong>Technologies Used:</strong></p>
           <p>HTML5, CSS3, Bootstrap, JavaScript, Ajax, PHP, MySQL</p>
 
@@ -154,62 +173,186 @@ Add contact information
 
       <hr class="divider">
 
-      <div class="row project-row container">
+      <div class="project-title container"><h3><strong>Preaching Input Dashboard</strong></h3></div>
 
-      	<div class="col-lg-4 project-img project-even-sm">
-          <h3><strong>Preaching Dashboard</strong></h3>
-          <img src="img/az-preaching-chart.JPG">
-        </div>
+      <div class="row project-row">
+
+      	<div id="preachingInputCarousel" class="col-lg-5 carousel slide" data-ride="carousel" data-interval="false">
+		  <div class="carousel-inner">
+		    <div class="project-img carousel-item active">
+		      <img class="d-block w-100" src="img/azfestival-week-input.JPG" alt="First slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/azfestival-login.JPG" alt="Second slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/azfestival-charts.JPG" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#preachingInputCarousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#preachingInputCarousel" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
 
         <div class="col project-details">
           
-          <p><strong>Client Problem:</strong></p>
-          <p>Local church needed a way to track the amount of people that are being preached to daily to see if they are reaching their goals.</p>
-          <p>Needed to track, interested recipients, uninterested and baptisms for each individual church as well as the total number for all churches.</p>
-          <p>Wanted to see the results displayed in a chart.</p>
-          <p>Required a way for members to input the amounts seperately and for the numbers to be updated in real time.</p>
-          <br>
-          <p><strong>Solution:</strong></p>
-          <p>Created a database that contained each church's name, and preaching count information and displayed this information with Google Charts.</p>
-          <p>Provided a form field for users to input the numbers for the desired church.</p>
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Created MySQL Database that contains each church's name and count information.</li>
+            <li>Implimented form for users to add number count and used PHP for form validation.</li>
+            <li>Displayed church data using Google Chart's Library.</li>
+            <li>Created 3 pages, fully responsive</li>
+          </ul>
+          
           <p><strong>Technologies Used:</strong></p>
-          <p>HTML5, CSS3, JavaScript, Google Charts, PHP, MySQL</p>
+          <p>HTML5, CSS3, Bootstrap, JavaScript, Google Charts, PHP, MySQL</p>
 
-          <a class="project-link"><button class="btn button-link btn-lg" disabled>Check it out*</button></a>
-          <p class="text-center">*Link disabled due to client's request to keep site private while in use.</p>
+          <a class="project-link"><button class="btn button-link btn-lg" disabled>Private</button></a>
 
         </div>
 
-        <div class="col-lg-4 project-img project-even-lg">
-          <h3><strong>Preaching Dashboard</strong></h3>
-          <img src="img/az-preaching-chart.JPG">
-        </div>
+        
         
       </div> <!-- project-row -->
 
 
       <hr class="divider">
-      
 
-      <div class="row project-row container">
+       <div class="project-title container"><h3><strong>Metal Sculpture Studio</strong></h3></div>
 
-        <div class="col-lg-4 project-img">
-          <h3><strong>Jitseasy</strong></h3>
-          <img src="img/jitseasy-filter-open.JPG">
+      <div class="row project-row">
+
+      	<div id="metalSSCarousel" class="col-lg-5 carousel slide" data-ride="carousel" data-interval="false">
+		  <div class="carousel-inner">
+		    <div class="project-img carousel-item active">
+		      <img class="d-block w-100" src="img/metal-sculpture-studio.JPG" alt="First slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/metal-sculpture-studio.JPG" alt="Second slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/metal-sculpture-studio.JPG" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#metalSSCarousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#metalSSCarousel" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+        
+        <div class="col project-details">
+          
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Implimented Mulit-Carrier Shipping plugin and UPS Freight Shipping.</li>
+            <li>Altered design to be more user friendly and responsive.</li>
+            <li>Helped to lower page loading times with caching and compressing image files.</li>
+          </ul>
+          <p><strong>Technologies Used:</strong></p>
+          <p>PHP, Wordpress</p>
+
+          <a href="https://www.metalsculpturestudio.com/" class="project-link"><button class="btn button-link btn-lg" >Check it out</button></a>
+
         </div>
+
+        
+      </div> <!-- project-row -->
+
+      <hr class="divider">
+
+      <div class="project-title container"><h3><strong>Dental Service Page</strong></h3></div>
+
+      <div class="row project-row">
+
+      	<div id="dentalPageCarousel" class="col-lg-5 carousel slide" data-ride="carousel" data-interval="false">
+		  <div class="carousel-inner">
+		    <div class="project-img carousel-item active">
+		      <img class="d-block w-100" src="img/dental-page.JPG" alt="First slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/dental-page.JPG" alt="Second slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/dental-page.JPG" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#dentalPageCarousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#dentalPageCarousel" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
 
         <div class="col project-details">
           
-          <p><strong>Client Problem:</strong></p>
-          <p>Filter selections did not display child categories in a clear way.</p>
-          <p>Filter items are very numerous and needed their own search field.</p>
-          <br>
-          <p><strong>Solution:</strong></p>
-          <p>Created a search field that filters the items in each category. Only displaying the items that contain the words entered.</p>
-          <p>Users are now able easily find their selection without having to scroll through a long list each time.</p>
-          <p>Indented the items that were children to better distinguish them from their parent categories.</p>
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Developed responsive landing page to help convert visitors to request a free consultation.</li>
+          </ul>
           <p><strong>Technologies Used:</strong></p>
-          <p>HTML5, CSS3, JavaScript</p>
+          <p>Wordpress</p>
+
+          <a href="https://visitcaringsmiles.com/services-type/all-on-4/" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
+       
+
+        </div>
+
+        
+      </div> <!-- project-row -->
+
+
+      <hr class="divider">
+
+      <div class="project-title container"><h3><strong>Jitseasy</strong></h3></div>
+      
+
+      <div class="row project-row">
+
+      	<div id="jitseasyCarousel" class="col-lg-5 carousel slide" data-ride="carousel" data-interval="false">
+		  <div class="carousel-inner">
+		    <div class="project-img carousel-item active">
+		      <img class="d-block w-100" src="img/jitseasy-filter-open.JPG" alt="First slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/jitseasy-filter-open.JPG" alt="Second slide">
+		    </div>
+		    <div class="project-img carousel-item">
+		      <img class="d-block w-100" src="img/jitseasy-filter-open.JPG" alt="Third slide">
+		    </div>
+		  </div>
+		  <a class="carousel-control-prev" href="#jitseasyCarousel" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="carousel-control-next" href="#jitseasyCarousel" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+
+        <div class="col project-details">
+          
+          <p><strong>Project Details:</strong></p>
+          <ul>
+            <li>Hid category items in a div that opens when category title is clicked</li>
+            <li>Used CSS and Javascript to indent the child category items.</li>
+            <li>Removed pagination links and allowed for vidoes to autoload when user reaches bottom of page.</li>
+            <li>Allowed ad to remain on the screen when user scrolls passed it.</li>
+          </ul>
+          <p><strong>Technologies Used:</strong></p>
+          <p>HTML5, CSS3, JavaScript, Wordpress, Toolset</p>
 
           <a href="https://www.jitseasy.com/" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
 
