@@ -1,8 +1,3 @@
-<!-- TO DO
-Add social media buttons
-Add github source links
-Add Testimonials
--->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -164,7 +159,11 @@ Add Testimonials
           <p><strong>Technologies Used:</strong></p>
           <p>HTML5, CSS3, Bootstrap, JavaScript, Ajax, PHP, MySQL</p>
 
-          <a class="project-link"><button class="btn btn-lg" disabled>In Progress...</button></a>
+          <br><br>
+          <div class="row">
+				<a class="col-6" href=""><button class="btn second-link btn-lg">Code</button></a>
+				<a class="col-6" href="" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
+			</div>
 
         </div>
 
@@ -201,18 +200,24 @@ Add Testimonials
 
         <div class="col project-details">
           
-          <p><strong>Project Details:</strong></p>
-          <ul>
-            <li>Created MySQL Database that contains each church's name and count information.</li>
-            <li>Implimented form for users to add number count and used PHP for form validation.</li>
-            <li>Displayed church data using Google Chart's Library.</li>
-            <li>Created 3 pages, fully responsive</li>
-          </ul>
-          
-          <p><strong>Technologies Used:</strong></p>
-          <p>HTML5, CSS3, Bootstrap, JavaScript, Google Charts, PHP, MySQL</p>
+			<p><strong>Project Details:</strong></p>
+			<ul>
+				<li>Created MySQL Database with a table for each church to hold their weekly data for each category.</li>
+				<li>Created admin system where each church can input their numbers for that church's preaching stats.</li>
+				<li>Table on admin end displays weekly data pulled from database.</li>
+				<li>When table is updated, the updated information is placed in a queue and all changes are updated in the database.</li>
+				<li>Displayed church data using Google Chart's Library.</li>
+				<li>Fully responsive.</li>
+			</ul>
 
-          <a class="project-link"><button class="btn button-link btn-lg" disabled>Private</button></a>
+			<p><strong>Technologies Used:</strong></p>
+			<p>HTML5, CSS3, Bootstrap, JavaScript, JQuery, Google Charts, PHP, MySQL, AJAX</p>
+
+			<br><br>
+			<div class="row">
+				<a class="col-6" href=""><button class="btn second-link btn-lg">Code</button></a>
+				<a class="col-6" href="http://azfestival.proqweb.com" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
+			</div>
 
         </div>
 
@@ -260,7 +265,9 @@ Add Testimonials
           <p><strong>Technologies Used:</strong></p>
           <p>PHP, Wordpress</p>
 
-          <a href="https://www.metalsculpturestudio.com/" class="project-link"><button class="btn button-link btn-lg" >Check it out</button></a>
+          <br><br>
+
+			<a href="https://www.metalsculpturestudio.com/" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
 
         </div>
 
@@ -297,14 +304,17 @@ Add Testimonials
 
         <div class="col project-details">
           
-          <p><strong>Project Details:</strong></p>
-          <ul>
-            <li>Developed responsive landing page to help convert visitors to request a free consultation.</li>
-          </ul>
-          <p><strong>Technologies Used:</strong></p>
-          <p>Wordpress</p>
+			<p><strong>Project Details:</strong></p>
+				<ul>
+					<li>Developed responsive landing page to help convert visitors to request a free consultation.</li>
+				</ul>
+			<p><strong>Technologies Used:</strong></p>
+			<p>Wordpress</p>
 
-          <a href="https://visitcaringsmiles.com/services-type/all-on-4/" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
+			<br><br>
+
+			<a href="https://visitcaringsmiles.com/services-type/all-on-4/" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
+
        
 
         </div>
@@ -355,6 +365,7 @@ Add Testimonials
           <p>HTML5, CSS3, JavaScript, Wordpress, Toolset</p>
 
           <a href="https://www.jitseasy.com/" class="project-link"><button class="btn button-link btn-lg">Check it out</button></a>
+
 
         </div>
 
